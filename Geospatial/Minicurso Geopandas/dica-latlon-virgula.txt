@@ -1,0 +1,10 @@
+Oi, fiz um código aqui para te ajudar. Executa ele em uma célula e depois adapta para o teu problema 👍
+
+# Criando um database de exemplo para o problema
+data = {'LATITUDE': ['-23,686360', '-23,612298', '-23,640576'], 
+        'LONGITUDE': ['-46,765585', '-46,609388', '-46,760755']}
+df = pd.DataFrame(data=data)
+
+# Transformando string com vírgula para float
+df['LATITUDE'] = df.apply(lambda row: float(row.LATITUDE.replace(',','.')), axis=1)
+df['LONGITUDE'] = df.apply(lambda row: float(row.LONGITUDE.replace(',','.')), axis=1)
