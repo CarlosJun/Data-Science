@@ -1,0 +1,7 @@
+Informações importantes:
+- Arquivo de origem: roubos_furtos_capital.json
+- Somente os eventos que ocorreram dentro da capital de São Paulo
+- Colunas selecionadas: ['NUM_BO', 'DATAOCORRENCIA', 'HORAOCORRENCIA', 
+                'PERIDOOCORRENCIA','LOGRADOURO','NUMERO','BAIRRO',
+                'LATITUDE', 'LONGITUDE','DESCRICAOLOCAL', 'DELEGACIA_NOME', 'RUBRICA',
+                 'geometry','tipo_evento']
