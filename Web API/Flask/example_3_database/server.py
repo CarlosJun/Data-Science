@@ -117,5 +117,34 @@ def get_empregados_post():
 					
 	return {'empregados': employers}
 
+@app.route("/register", methods=['POST'])
+def add_empregados_post():
+		
+	username = request.form['username']
+	secret = request.form['secret']
+
+	if not check_user(username, secret):
+		# 401 HTTP Unauthorized
+		return Response("Unauthorized", status=401)
+
+	nome = request.form['nome']
+	cargo = request.form['cargo']
+	salario = request.form['salario']
+
+	# construir a consulta
+	query = """
+            	INSERT INTO empregados (nome, cargo, salario)
+            	VALUES ("{}", "{}", "{}");
+            """.format(nome, cargo, salario)
+
+	# definindo um cursor
+	cursor = g.conn.cursor()
+    # lendo os dados
+	cursor.execute(query)
+	# salvando os dados no banco
+	g.conn.commit()
+					
+	return {"empregados":"Registered employee"}
+
 if __name__ == "__main__":
 	app.run(debug=True)
