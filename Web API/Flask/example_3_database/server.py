@@ -17,12 +17,11 @@ def before_request():
 	conn = sqlite3.connect(DB_URL)
 	g.conn = conn
 
-@app.after_request
-def after_request(response):
+@app.teardown_request
+def after_request(exception):
 	if g.conn is not None:
 		g.conn.close()
 		print("Desconectando do banco")
-	return response
 
 def query_employers_to_dict(conn, query):
     # definindo um cursor
@@ -59,7 +58,6 @@ def get_empregados():
 
 @app.route("/empregados/<cargo>")
 def get_empregados_cargo(cargo):
-
 
 	# consturindo a consulta
 	query = """
@@ -147,4 +145,4 @@ def add_empregados_post():
 	return {"empregados":"Registered employee"}
 
 if __name__ == "__main__":
-	app.run(debug=True)
+	app.run(debug=False)
