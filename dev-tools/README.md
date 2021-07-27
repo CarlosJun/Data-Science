@@ -27,44 +27,43 @@ O Htop é um avançado sistema interativo visualizador de processos. Escrito par
 
 ### Principais modificadores:
 
-Habilitar o modo arquivo:
-`-a, --archive`
-Mostrar o progresso do processo:
-`-v, --verbose`
-Comprimir os dados durante a transferência:
-`-z, --compress`
+Habilitar o modo arquivo:  
+`-a, --archive`  
+Mostrar o progresso do processo:  
+`-v, --verbose`  
+Comprimir os dados durante a transferência:  
+`-z, --compress`  
 
 ### Mostrar o progresso dos arquivos transferidos:
 `rsync -aP [SRC] [DEST]`
 
 ## Tmux - Multiplexador de terminal
 
-
 Todos os comandos: [cheatsheet]('https://tmuxcheatsheet.com/')
 
 ### Principais comandos:
 
-Iniciar uma nova sessão:
-`tmux`
-Iniciar uma nova sessão atribuindo um nome:
-`tmux new -s [nome]`
-Listar as sessões abertas:
-`tmux ls`
-Entrar na última sessão aberta:
-`tmux a`
-Entrar em uma sessão aberta especificando o nome:
-`tmux a -t [nome]`
-Finalizar uma sessão:
-`tmux kill-session -t [nome]`
+Iniciar uma nova sessão:  
+`tmux`  
+Iniciar uma nova sessão atribuindo um nome:  
+`tmux new -s [nome]`  
+Listar as sessões abertas:  
+`tmux ls`  
+Entrar na última sessão aberta:  
+`tmux a`  
+Entrar em uma sessão aberta especificando o nome:  
+`tmux a -t [nome]`  
+Finalizar uma sessão:  
+`tmux kill-session -t [nome]`  
 
 ### Comandos internos:
-Separar o painel horizontalmente:
-`crtl+b "`
-Separar o painel verticalmente:
-`crtl+b %`
-Navegar pelos os paineis:
-`crtl+b ↑`
-Sair da sessão sem desligar:
-`crtl+b d`
-Fechar um painel:
-`crtl+d`
+Separar o painel horizontalmente:  
+`crtl+b "`  
+Separar o painel verticalmente:  
+`crtl+b %`  
+Navegar pelos os paineis:  
+`crtl+b ↑`  
+Sair da sessão sem desligar:  
+`crtl+b d`  
+Fechar um painel:  
+`crtl+d`  
