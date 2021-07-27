@@ -37,7 +37,7 @@ Comprimir os dados durante a transferência:
 ### Mostrar o progresso dos arquivos transferidos:
 `rsync -aP [SRC] [DEST]`
 
-## Tmux - Multiplexador de terminal
+## 3. Tmux - Multiplexador de terminal
 
 Cheatsheet: https://tmuxcheatsheet.com/ 
 
