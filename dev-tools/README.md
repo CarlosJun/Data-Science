@@ -39,7 +39,7 @@ Comprimir os dados durante a transferência:
 
 ## Tmux - Multiplexador de terminal
 
-Todos os comandos: [cheatsheet]('https://tmuxcheatsheet.com/')
+Cheatsheet: https://tmuxcheatsheet.com/ 
 
 ### Principais comandos:
 
